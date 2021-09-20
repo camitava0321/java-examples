@@ -1,0 +1,15 @@
+java="C:\Program Files\EditPlus 2\editplus.exe"
+class=java
+cmd=exec
+html=viewer
+htm=viewer
+
+trc=viewer
+cfg=viewer
+vtg=viewer
+del=viewer
+
+dll=viewer
+pdf="C:\\Program Files\\Adobe\\Reader 8.0\\Reader\\AcroRd32.exe"
+doc="C:\\Program Files\\Microsoft Office\\Office11\\winword.exe"
+xls="C:\\Program Files\\Microsoft Office\\Office11\\excel.exe"
