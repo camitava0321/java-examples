@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xmlSchemas/example.xsd">
+  <customer orderid="001">
+    <highnetworth>true</highnetworth>
+    <customerid>1</customerid>
+    <customername>Amitava Chakraborty</customername>
+    <customerdob>2001-01-01</customerdob>
+    <customeraddress>
+      <address1>address1</address1>
+      <address2>address2</address2>
+      <city>city</city>
+      <country>country</country>
+    </customeraddress>
+    <accounts>
+      <account>
+        <accountid>1</accountid>
+        <accountname>account name1</accountname>
+        <accountopendate>2001-01-01</accountopendate>
+        <balance>0.0</balance>
+      </account>
+      <account>
+        <accountid>2</accountid>
+        <accountname>account name2</accountname>
+        <accountopendate>2001-01-01</accountopendate>
+        <balance>0.0</balance>
+      </account>
+      <account>
+        <accountid>3</accountid>
+        <accountname>account name3</accountname>
+        <accountopendate>2001-01-01</accountopendate>
+        <balance>0.0</balance>
+      </account>
+    </accounts>
+  </customer>
+  <customer orderid="001">
+    <highnetworth>true</highnetworth>
+    <customerid>002</customerid>
+    <customername>Chayanika Chakraborty</customername>
+    <customerdob>2001-01-01</customerdob>
+    <customeraddress>
+      <address1>address1</address1>
+      <address2>address2</address2>
+      <city>city</city>
+      <country>country</country>
+    </customeraddress>
+    <accounts>
+      <account>
+        <accountid>21</accountid>
+        <accountname>account name1</accountname>
+        <accountopendate>2001-01-01</accountopendate>
+        <balance>0.0</balance>
+      </account>
+      <account>
+        <accountid>22</accountid>
+        <accountname>account name2</accountname>
+        <accountopendate>2001-01-01</accountopendate>
+        <balance>0.0</balance>
+      </account>
+      <account>
+        <accountid>23</accountid>
+        <accountname>account name3</accountname>
+        <accountopendate>2001-01-01</accountopendate>
+        <balance>0.0</balance>
+      </account>
+    </accounts>
+  </customer>
+  <customer orderid="001">
+    <highnetworth>true</highnetworth>
+    <customerid>1</customerid>
+    <customername>Jayanta Ray</customername>
+    <customerdob>2001-01-01</customerdob>
+    <customeraddress>
+      <address1>address1</address1>
+      <address2>address2</address2>
+      <city>city</city>
+      <country>country</country>
+    </customeraddress>
+    <accounts>
+      <account>
+        <accountid>31</accountid>
+        <accountname>account name1</accountname>
+        <accountopendate>2001-01-01</accountopendate>
+        <balance>0.0</balance>
+      </account>
+    </accounts>
+  </customer>
+  <customer orderid="003">
+    <highnetworth>true</highnetworth>
+    <customerid>1</customerid>
+    <customername>Zeenat Rehman</customername>
+    <customerdob>2001-01-01</customerdob>
+    <customeraddress>
+      <address1>address1</address1>
+      <address2>address2</address2>
+      <city>city</city>
+      <country>country</country>
+    </customeraddress>
+    <accounts>
+      <account>
+        <accountid>51</accountid>
+        <accountname>account name1</accountname>
+        <accountopendate>2001-01-01</accountopendate>
+        <balance>0.0</balance>
+      </account>
+      <account>
+        <accountid>52</accountid>
+        <accountname>account name2</accountname>
+        <accountopendate>2001-01-01</accountopendate>
+        <balance>0.0</balance>
+      </account>
+    </accounts>
+  </customer>
+  <customer orderid="005">
+    <highnetworth>true</highnetworth>
+    <customerid>1</customerid>
+    <customername>Lee Jones</customername>
+    <customerdob>2001-01-01</customerdob>
+    <customeraddress>
+      <address1>address1</address1>
+      <address2>address2</address2>
+      <city>city</city>
+      <country>country</country>
+    </customeraddress>
+    <accounts>
+      <account>
+        <accountid>81</accountid>
+        <accountname>account name1</accountname>
+        <accountopendate>2001-01-01</accountopendate>
+        <balance>0.0</balance>
+      </account>
+    </accounts>
+  </customer>
+</customers>

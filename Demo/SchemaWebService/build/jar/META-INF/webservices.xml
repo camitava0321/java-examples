@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Copyright 2004 Sun Microsystems, Inc.  All rights reserved.  You may not modify, use, reproduce, or distribute this software except in compliance with the terms of the License at: 
+ http://developer.sun.com/berkeley_license.html
+ $Id: webservices.xml,v 1.4 2005/03/22 21:45:23 smitha Exp $ -->
+
+<webservices xmlns="http://java.sun.com/xml/ns/j2ee"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+        http://www.ibm.com/webservices/xsd/j2ee_web_services_1_1.xsd"
+      version="1.1">
+  <webservice-description>
+    <webservice-description-name>SchemaDefinedPurchaseOrderService</webservice-description-name>
+    <wsdl-file>META-INF/wsdl/SchemaDefinedPurchaseOrderService.wsdl</wsdl-file>
+    <jaxrpc-mapping-file>META-INF/schemadefinedpurchaseorderservice-mapping.xml</jaxrpc-mapping-file>
+    <port-component>
+      <description>port component description</description>
+      <port-component-name>SchemaDefinedPurchaseOrderService</port-component-name>
+      <wsdl-port xmlns:PurchaseOrderns="urn:SchemaDefinedPurchaseOrderService">PurchaseOrderns:SchemaDefinedPurchaseOrderServiceSEIPort</wsdl-port>
+      <service-endpoint-interface>
+        com.sun.j2ee.blueprints.objectposervice.SchemaDefinedPurchaseOrderServiceSEI
+      </service-endpoint-interface>
+      <service-impl-bean>
+        <ejb-link>SchemaDefinedPurchaseOrderServiceBean</ejb-link>
+      </service-impl-bean>
+    </port-component>
+  </webservice-description>
+</webservices>

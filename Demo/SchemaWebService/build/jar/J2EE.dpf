@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deployment-plan>
+  <file-entry>
+    <name>sun-ejb-jar.xml</name>
+    <content>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE sun-ejb-jar PUBLIC "-//Sun Microsystems, Inc.//DTD Application Server 8.1 EJB 2.1//EN" "http://www.sun.com/software/appserver/dtds/sun-ejb-jar_2_1-1.dtd"&gt;
+&lt;sun-ejb-jar&gt;
+  &lt;enterprise-beans&gt;
+    &lt;name&gt;DocOrientedServiceJAR&lt;/name&gt;
+    &lt;ejb&gt;
+      &lt;ejb-name&gt;SchemaDefinedPurchaseOrderServiceBean&lt;/ejb-name&gt;
+      &lt;jndi-name&gt;SchemaDefinedPurchaseOrderServiceBean&lt;/jndi-name&gt;
+      &lt;bean-pool&gt;
+        &lt;steady-pool-size&gt;0&lt;/steady-pool-size&gt;
+        &lt;resize-quantity&gt;60&lt;/resize-quantity&gt;
+        &lt;max-pool-size&gt;60&lt;/max-pool-size&gt;
+        &lt;pool-idle-timeout-in-seconds&gt;900&lt;/pool-idle-timeout-in-seconds&gt;
+      &lt;/bean-pool&gt;
+      &lt;webservice-endpoint&gt;
+        &lt;port-component-name&gt;SchemaDefinedPurchaseOrderService&lt;/port-component-name&gt;
+        &lt;endpoint-address-uri&gt;webservice/SchemaDefinedPurchaseOrderService&lt;/endpoint-address-uri&gt;
+      &lt;/webservice-endpoint&gt;
+    &lt;/ejb&gt;
+  &lt;/enterprise-beans&gt;
+&lt;/sun-ejb-jar&gt;
+</content>
+  </file-entry>
+</deployment-plan>

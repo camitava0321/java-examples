@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<CBM>
+<DIRECT>
+<first>Kiran</first>
+<last>Pai</last>
+<age>22</age>
+</DIRECT>
+<CONTROL>
+<first>Bill</first>
+<last>Gates</last>
+<age>46</age>
+</CONTROL>
+<EXECUTE>
+<first>Steve</first>
+<last>Jobs</last>
+<age>40</age>
+</EXECUTE>
+</CBM>

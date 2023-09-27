@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:simpleType name="stringtype">
+  <xs:restriction base="xs:string"/>
+</xs:simpleType>
+<xs:simpleType name="booleantype">
+  <xs:restriction base="xs:boolean"/>
+</xs:simpleType>
+
+<xs:simpleType name="inttype">
+  <xs:restriction base="xs:positiveInteger"/>
+</xs:simpleType>
+
+<xs:simpleType name="dectype">
+  <xs:restriction base="xs:decimal"/>
+</xs:simpleType>
+
+<xs:simpleType name="datetype">
+  <xs:restriction base="xs:date">
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="orderidtype">
+  <xs:restriction base="xs:string">
+    <xs:pattern value="[0-9]{6}"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name="addresstype">
+  <xs:sequence>
+    <xs:element name="address1" type="stringtype"/>
+    <xs:element name="address2" type="stringtype"/>
+    <xs:element name="city" type="stringtype"/>
+    <xs:element name="country" type="stringtype"/>
+  </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="accounttype">
+  <xs:sequence>
+    <xs:element name="accountid" type="inttype"/>
+    <xs:element name="accountname" type="stringtype"/>
+    <xs:element name="accountopendate" type="datetype"/>
+    <xs:element name="balance" type="dectype"/>
+  </xs:sequence>
+</xs:complexType>
+<xs:complexType name="account">
+  <xs:sequence>
+    <xs:element name="account" type="accounttype"/>
+  </xs:sequence>
+</xs:complexType>
+<xs:complexType name="customerstype">
+  <xs:sequence>
+    <xs:element name="customer" type="customertype"/>
+  </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="customertype">
+  <xs:sequence>
+    <xs:element name="highnetworth" type="booleantype"/>
+    <xs:element name="customerid" type="inttype"/>
+    <xs:element name="customername" type="stringtype"/>
+    <xs:element name="customerdob" type="datetype"/>
+    <xs:element name="customeraddress" type="addresstype" maxOccurs="1"/>
+    <xs:element name="accounts" maxOccurs="unbounded" type="account"/>
+  </xs:sequence>
+  <xs:attribute name="orderid" type="orderidtype" use="required"/>
+</xs:complexType>
+
+<xs:element name="customers" type="customerstype"/>
+
+</xs:schema> 

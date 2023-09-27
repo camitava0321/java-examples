@@ -1,0 +1,77 @@
+INFO - 18:00:25: Java PackageFragment com.amc.gof.creational.builder was translated as UML ModelImpl builder
+WARNING - 18:00:25: First conversion pass
+INFO - 18:00:25: Entering Java PackageFragment com.amc.gof.creational.builder
+ERROR - 18:00:25: java.net.MalformedURLException: unknown protocol: pathmap
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.handleDemandLoadException(ResourceSetImpl.java:319)
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:278)
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getResource(ResourceSetImpl.java:406)
+org.eclipse.umlgen.reverse.java.AbstractJava2UMLConverter.load(AbstractJava2UMLConverter.java:2274)
+org.eclipse.umlgen.reverse.java.Java2UMLConverter.initializeModel(Java2UMLConverter.java:137)
+org.eclipse.umlgen.reverse.java.AbstractJava2UMLConverter.convert(AbstractJava2UMLConverter.java:347)
+org.eclipse.umlgen.reverse.java.AbstractJava2UMLConverter.doConvertion(AbstractJava2UMLConverter.java:546)
+org.eclipse.umlgen.reverse.java.AbstractJava2UMLConverter.convert(AbstractJava2UMLConverter.java:256)
+org.eclipse.umlgen.reverse.java.AbstractJava2UMLConverter.convert(AbstractJava2UMLConverter.java:2248)
+org.eclipse.umlgen.reverse.java.diagram.PrototypeJava2UMLWizard.doFinish(PrototypeJava2UMLWizard.java:144)
+org.eclipse.umlgen.reverse.java.internal.wizards.Java2UMLWizard$1.run(Java2UMLWizard.java:104)
+org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+INFO - 18:01:01: Java PackageFragment com.amc.gof.creational.builder was translated as UML ModelImpl builder
+WARNING - 18:01:01: First conversion pass
+INFO - 18:01:01: Entering Java PackageFragment com.amc.gof.creational.builder
+ERROR - 18:01:01: org.xml.sax.SAXParseExceptionpublicId: /DesignPatterns/src/com/amc/gof/creational/builder/Bottle.java; systemId: file:///DesignPatterns/src/com/amc/gof/creational/builder/Bottle.java; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.handleDemandLoadException(ResourceSetImpl.java:319)
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:278)
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getResource(ResourceSetImpl.java:406)
+org.eclipse.umlgen.reverse.java.AbstractJava2UMLConverter.load(AbstractJava2UMLConverter.java:2274)
+org.eclipse.umlgen.reverse.java.Java2UMLConverter.initializeModel(Java2UMLConverter.java:110)
+org.eclipse.umlgen.reverse.java.AbstractJava2UMLConverter.convert(AbstractJava2UMLConverter.java:347)
+org.eclipse.umlgen.reverse.java.AbstractJava2UMLConverter.doConvertion(AbstractJava2UMLConverter.java:546)
+org.eclipse.umlgen.reverse.java.AbstractJava2UMLConverter.convert(AbstractJava2UMLConverter.java:256)
+org.eclipse.umlgen.reverse.java.AbstractJava2UMLConverter.convert(AbstractJava2UMLConverter.java:2248)
+org.eclipse.umlgen.reverse.java.diagram.PrototypeJava2UMLWizard.doFinish(PrototypeJava2UMLWizard.java:144)
+org.eclipse.umlgen.reverse.java.internal.wizards.Java2UMLWizard$1.run(Java2UMLWizard.java:104)
+org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+ERROR - 18:01:01: org.xml.sax.SAXParseExceptionpublicId: /DesignPatterns/src/com/amc/gof/creational/builder/Bottle.java; systemId: file:///DesignPatterns/src/com/amc/gof/creational/builder/Bottle.java; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+org.eclipse.umlgen.reverse.java.AbstractJava2UMLConverter.throwCoreException(AbstractJava2UMLConverter.java:2216)
+org.eclipse.umlgen.reverse.java.AbstractJava2UMLConverter.load(AbstractJava2UMLConverter.java:2281)
+org.eclipse.umlgen.reverse.java.Java2UMLConverter.initializeModel(Java2UMLConverter.java:110)
+org.eclipse.umlgen.reverse.java.AbstractJava2UMLConverter.convert(AbstractJava2UMLConverter.java:347)
+org.eclipse.umlgen.reverse.java.AbstractJava2UMLConverter.doConvertion(AbstractJava2UMLConverter.java:546)
+org.eclipse.umlgen.reverse.java.AbstractJava2UMLConverter.convert(AbstractJava2UMLConverter.java:256)
+org.eclipse.umlgen.reverse.java.AbstractJava2UMLConverter.convert(AbstractJava2UMLConverter.java:2248)
+org.eclipse.umlgen.reverse.java.diagram.PrototypeJava2UMLWizard.doFinish(PrototypeJava2UMLWizard.java:144)
+org.eclipse.umlgen.reverse.java.internal.wizards.Java2UMLWizard$1.run(Java2UMLWizard.java:104)
+org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+INFO - 18:01:20: Java PackageFragment com.amc.gof.creational.builder was translated as UML ModelImpl builder
+WARNING - 18:01:20: First conversion pass
+INFO - 18:01:20: Entering Java PackageFragment com.amc.gof.creational.builder
+ERROR - 18:01:20: org.xml.sax.SAXParseExceptionpublicId: /DesignPatterns/src/com/amc/gof/creational/builder/Bottle.java; systemId: file:///DesignPatterns/src/com/amc/gof/creational/builder/Bottle.java; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.handleDemandLoadException(ResourceSetImpl.java:319)
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:278)
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getResource(ResourceSetImpl.java:406)
+org.eclipse.umlgen.reverse.java.AbstractJava2UMLConverter.load(AbstractJava2UMLConverter.java:2274)
+org.eclipse.umlgen.reverse.java.Java2UMLConverter.initializeModel(Java2UMLConverter.java:110)
+org.eclipse.umlgen.reverse.java.AbstractJava2UMLConverter.convert(AbstractJava2UMLConverter.java:347)
+org.eclipse.umlgen.reverse.java.AbstractJava2UMLConverter.doConvertion(AbstractJava2UMLConverter.java:546)
+org.eclipse.umlgen.reverse.java.AbstractJava2UMLConverter.convert(AbstractJava2UMLConverter.java:256)
+org.eclipse.umlgen.reverse.java.AbstractJava2UMLConverter.convert(AbstractJava2UMLConverter.java:2248)
+org.eclipse.umlgen.reverse.java.diagram.PrototypeJava2UMLWizard.doFinish(PrototypeJava2UMLWizard.java:144)
+org.eclipse.umlgen.reverse.java.internal.wizards.Java2UMLWizard$1.run(Java2UMLWizard.java:104)
+org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+ERROR - 18:01:20: org.xml.sax.SAXParseExceptionpublicId: /DesignPatterns/src/com/amc/gof/creational/builder/Bottle.java; systemId: file:///DesignPatterns/src/com/amc/gof/creational/builder/Bottle.java; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+org.eclipse.umlgen.reverse.java.AbstractJava2UMLConverter.throwCoreException(AbstractJava2UMLConverter.java:2216)
+org.eclipse.umlgen.reverse.java.AbstractJava2UMLConverter.load(AbstractJava2UMLConverter.java:2281)
+org.eclipse.umlgen.reverse.java.Java2UMLConverter.initializeModel(Java2UMLConverter.java:110)
+org.eclipse.umlgen.reverse.java.AbstractJava2UMLConverter.convert(AbstractJava2UMLConverter.java:347)
+org.eclipse.umlgen.reverse.java.AbstractJava2UMLConverter.doConvertion(AbstractJava2UMLConverter.java:546)
+org.eclipse.umlgen.reverse.java.AbstractJava2UMLConverter.convert(AbstractJava2UMLConverter.java:256)
+org.eclipse.umlgen.reverse.java.AbstractJava2UMLConverter.convert(AbstractJava2UMLConverter.java:2248)
+org.eclipse.umlgen.reverse.java.diagram.PrototypeJava2UMLWizard.doFinish(PrototypeJava2UMLWizard.java:144)
+org.eclipse.umlgen.reverse.java.internal.wizards.Java2UMLWizard$1.run(Java2UMLWizard.java:104)
+org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+WARNING - 18:03:34: Convert com.amc.gof.creational.builder
+WARNING - 18:03:34: First conversion pass
+ERROR - 18:03:34: java.net.MalformedURLException: unknown protocol: pathmap
+WARNING - 18:03:47: Convert com.amc.gof.creational.builder
+WARNING - 18:03:47: First conversion pass
+ERROR - 18:03:47: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: Invalid byte 2 of 2-byte UTF-8 sequence.
+ERROR - 18:03:47: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: Invalid byte 2 of 2-byte UTF-8 sequence.

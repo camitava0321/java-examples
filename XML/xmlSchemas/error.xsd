@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:simpleType name="errorcategorytype">
+  <xs:restriction base="xs:string">
+  	<xs:enumeration value="ERROR"/>
+  	<xs:enumeration value="WARNING"/>
+  	<xs:enumeration value="FATAL"/>
+  	<xs:enumeration value="INFO"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="erroricontype">
+  <xs:restriction base="xs:string">
+  	<xs:enumeration value="ERROR_ICON"/>
+  	<xs:enumeration value="WARNING_ICON"/>
+  	<xs:enumeration value="FATAL_ICON"/>
+  	<xs:enumeration value="INFO_ICON"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="actionnametype">
+  <xs:restriction base="xs:string">
+  	<xs:enumeration value="OK"/>
+  	<xs:enumeration value="Cancel"/>
+  	<xs:enumeration value="Yes"/>
+  	<xs:enumeration value="No"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="erroridtype">
+  <xs:restriction base="xs:ID">
+    <xs:pattern value="E[0-9]{6}"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name="action">
+  <xs:sequence>
+    <xs:element name="actionid" type="xs:positiveInteger"/>
+    <xs:element name="actionname" type="actionnametype"/>
+    <xs:element name="default" type="xs:boolean"/>
+  </xs:sequence>
+</xs:complexType>
+<xs:complexType name="errorstype">
+  <xs:sequence>
+    <xs:element name="error" maxOccurs="unbounded" type="errortype"/>
+  </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="errortype">
+  <xs:sequence>
+    <xs:element name="category" type="errorcategorytype"/>
+    <xs:element name="errortext" type="xs:string"/>
+    <xs:element name="icon" type="erroricontype"/>
+    <xs:element name="action" maxOccurs="unbounded" type="action"/>
+  </xs:sequence>
+  <xs:attribute name="errorid" type="erroridtype" use="required"/>
+</xs:complexType>
+
+<xs:element name="errors" type="errorstype"/>
+
+</xs:schema> 

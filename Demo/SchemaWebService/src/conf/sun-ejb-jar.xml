@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Copyright 2004 Sun Microsystems, Inc.  All rights reserved.  You may not modify, use, reproduce, or distribute this software except in compliance with the terms of the License at: 
+ http://developer.sun.com/berkeley_license.html
+ $Id: sun-ejb-jar.xml,v 1.5 2005/03/24 21:25:31 yutayoshida Exp $ -->
+
+<!DOCTYPE sun-ejb-jar PUBLIC "-//Sun Microsystems, Inc.//DTD Application Server 8.1 EJB 2.1//EN" "http://www.sun.com/software/appserver/dtds/sun-ejb-jar_2_1-1.dtd">
+<sun-ejb-jar>
+  <enterprise-beans>
+    <name>DocOrientedServiceJAR</name>
+    <ejb>
+      <ejb-name>SchemaDefinedPurchaseOrderServiceBean</ejb-name>
+      <jndi-name>SchemaDefinedPurchaseOrderServiceBean</jndi-name>
+      <bean-pool>
+        <steady-pool-size>0</steady-pool-size>
+        <resize-quantity>60</resize-quantity>
+        <max-pool-size>60</max-pool-size>
+        <pool-idle-timeout-in-seconds>900</pool-idle-timeout-in-seconds>
+      </bean-pool>
+      <webservice-endpoint>
+        <port-component-name>SchemaDefinedPurchaseOrderService</port-component-name>
+        <endpoint-address-uri>webservice/SchemaDefinedPurchaseOrderService</endpoint-address-uri>
+      </webservice-endpoint>
+    </ejb>
+  </enterprise-beans>
+</sun-ejb-jar>

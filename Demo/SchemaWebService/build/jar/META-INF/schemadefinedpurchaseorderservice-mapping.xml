@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java-wsdl-mapping version="1.1" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee    http://www.ibm.com/webservices/xsd/j2ee_jaxrpc_mapping_1_1.xsd">
+<package-mapping>
+<package-type>com.sun.j2ee.blueprints.objectposervice</package-type>
+<namespaceURI>urn:SchemaDefinedPurchaseOrderService</namespaceURI>
+</package-mapping>
+<package-mapping>
+<package-type>com.sun.j2ee.blueprints.objectposervice</package-type>
+<namespaceURI>urn:SchemaDefinedPurchaseOrderService</namespaceURI>
+</package-mapping>
+<java-xml-type-mapping>
+<java-type>com.sun.j2ee.blueprints.objectposervice.LineItem</java-type>
+<root-type-qname xmlns:typeNS="urn:SchemaDefinedPurchaseOrderService">typeNS:LineItem</root-type-qname>
+<qname-scope>complexType</qname-scope>
+<variable-mapping>
+<java-variable-name>itemId</java-variable-name>
+<xml-element-name>itemId</xml-element-name>
+</variable-mapping>
+<variable-mapping>
+<java-variable-name>price</java-variable-name>
+<xml-element-name>price</xml-element-name>
+</variable-mapping>
+<variable-mapping>
+<java-variable-name>quantity</java-variable-name>
+<xml-element-name>quantity</xml-element-name>
+</variable-mapping>
+</java-xml-type-mapping>
+<java-xml-type-mapping>
+<java-type>com.sun.j2ee.blueprints.objectposervice.SchemaDefinedPurchaseOrderServiceSEI_submitPO_RequestStruct</java-type>
+<root-type-qname xmlns:typeNS="urn:SchemaDefinedPurchaseOrderService">typeNS:submitPO</root-type-qname>
+<qname-scope>complexType</qname-scope>
+<variable-mapping>
+<java-variable-name>PurchaseOrder_1</java-variable-name>
+<xml-element-name>PurchaseOrder_1</xml-element-name>
+</variable-mapping>
+</java-xml-type-mapping>
+<java-xml-type-mapping>
+<java-type>com.sun.j2ee.blueprints.objectposervice.Address</java-type>
+<root-type-qname xmlns:typeNS="urn:SchemaDefinedPurchaseOrderService">typeNS:Address</root-type-qname>
+<qname-scope>complexType</qname-scope>
+<variable-mapping>
+<java-variable-name>city</java-variable-name>
+<xml-element-name>city</xml-element-name>
+</variable-mapping>
+<variable-mapping>
+<java-variable-name>postalCode</java-variable-name>
+<xml-element-name>postalCode</xml-element-name>
+</variable-mapping>
+<variable-mapping>
+<java-variable-name>state</java-variable-name>
+<xml-element-name>state</xml-element-name>
+</variable-mapping>
+<variable-mapping>
+<java-variable-name>street</java-variable-name>
+<xml-element-name>street</xml-element-name>
+</variable-mapping>
+</java-xml-type-mapping>
+<java-xml-type-mapping>
+<java-type>com.sun.j2ee.blueprints.objectposervice.PurchaseOrder</java-type>
+<root-type-qname xmlns:typeNS="urn:SchemaDefinedPurchaseOrderService">typeNS:PurchaseOrder</root-type-qname>
+<qname-scope>complexType</qname-scope>
+<variable-mapping>
+<java-variable-name>billTo</java-variable-name>
+<xml-element-name>billTo</xml-element-name>
+</variable-mapping>
+<variable-mapping>
+<java-variable-name>createDate</java-variable-name>
+<xml-element-name>createDate</xml-element-name>
+</variable-mapping>
+<variable-mapping>
+<java-variable-name>items</java-variable-name>
+<xml-element-name>items</xml-element-name>
+</variable-mapping>
+<variable-mapping>
+<java-variable-name>poId</java-variable-name>
+<xml-element-name>poId</xml-element-name>
+</variable-mapping>
+<variable-mapping>
+<java-variable-name>shipTo</java-variable-name>
+<xml-element-name>shipTo</xml-element-name>
+</variable-mapping>
+</java-xml-type-mapping>
+<java-xml-type-mapping>
+<java-type>com.sun.j2ee.blueprints.objectposervice.SchemaDefinedPurchaseOrderServiceSEI_submitPO_ResponseStruct</java-type>
+<root-type-qname xmlns:typeNS="urn:SchemaDefinedPurchaseOrderService">typeNS:submitPOResponse</root-type-qname>
+<qname-scope>complexType</qname-scope>
+<variable-mapping>
+<java-variable-name>result</java-variable-name>
+<xml-element-name>result</xml-element-name>
+</variable-mapping>
+</java-xml-type-mapping>
+<service-interface-mapping>
+<service-interface>com.sun.j2ee.blueprints.objectposervice.SchemaDefinedPurchaseOrderService</service-interface>
+<wsdl-service-name xmlns:serviceNS="urn:SchemaDefinedPurchaseOrderService">serviceNS:SchemaDefinedPurchaseOrderService</wsdl-service-name>
+<port-mapping>
+<port-name>SchemaDefinedPurchaseOrderServiceSEIPort</port-name>
+<java-port-name>SchemaDefinedPurchaseOrderServiceSEIPort</java-port-name>
+</port-mapping>
+</service-interface-mapping>
+<service-endpoint-interface-mapping>
+<service-endpoint-interface>com.sun.j2ee.blueprints.objectposervice.SchemaDefinedPurchaseOrderServiceSEI</service-endpoint-interface>
+<wsdl-port-type xmlns:portTypeNS="urn:SchemaDefinedPurchaseOrderService">portTypeNS:SchemaDefinedPurchaseOrderServiceSEI</wsdl-port-type>
+<wsdl-binding xmlns:bindingNS="urn:SchemaDefinedPurchaseOrderService">bindingNS:SchemaDefinedPurchaseOrderServiceSEIBinding</wsdl-binding>
+<service-endpoint-method-mapping>
+<java-method-name>submitPO</java-method-name>
+<wsdl-operation>submitPO</wsdl-operation>
+<wrapped-element/>
+<method-param-parts-mapping>
+<param-position>0</param-position>
+<param-type>com.sun.j2ee.blueprints.objectposervice.PurchaseOrder</param-type>
+<wsdl-message-mapping>
+<wsdl-message xmlns:wsdlMsgNS="urn:SchemaDefinedPurchaseOrderService">wsdlMsgNS:SchemaDefinedPurchaseOrderServiceSEI_submitPO</wsdl-message>
+<wsdl-message-part-name>PurchaseOrder_1</wsdl-message-part-name>
+<parameter-mode>IN</parameter-mode>
+</wsdl-message-mapping>
+</method-param-parts-mapping>
+<wsdl-return-value-mapping>
+<method-return-value>java.lang.String</method-return-value>
+<wsdl-message xmlns:wsdlMsgNS="urn:SchemaDefinedPurchaseOrderService">wsdlMsgNS:SchemaDefinedPurchaseOrderServiceSEI_submitPOResponse</wsdl-message>
+<wsdl-message-part-name>result</wsdl-message-part-name>
+</wsdl-return-value-mapping>
+</service-endpoint-method-mapping>
+</service-endpoint-interface-mapping>
+</java-wsdl-mapping>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deployment-plan>
+  <file-entry>
+    <name>sun-ejb-jar.xml</name>
+    <content>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE sun-ejb-jar PUBLIC "-//Sun Microsystems, Inc.//DTD Application Server 8.1 EJB 2.1//EN" "http://www.sun.com/software/appserver/dtds/sun-ejb-jar_2_1-1.dtd"&gt;
+&lt;sun-ejb-jar&gt;
+  &lt;enterprise-beans&gt;
+    &lt;ejb&gt;
+      &lt;ejb-name&gt;CartBean&lt;/ejb-name&gt;
+      &lt;jndi-name&gt;ejb/CartBean&lt;/jndi-name&gt;
+    &lt;/ejb&gt;
+  &lt;/enterprise-beans&gt;
+&lt;/sun-ejb-jar&gt;
+</content>
+  </file-entry>
+</deployment-plan>

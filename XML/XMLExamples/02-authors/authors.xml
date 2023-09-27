@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="errors1.xsl"?>
+<errors>
+  <error>
+    <name>Victor Hugo</name>
+    <nationality>French</nationality>
+    <bprice>200</bprice>
+  </error>
+  <error period="classical">
+    <name>Sophocles</name>
+    <nationality>Greek</nationality>
+    <bprice>250</bprice>
+  </error>
+  <error>
+    <name>Leo Tolstoy</name>
+    <nationality>Russian</nationality>
+    <bprice>650</bprice>
+  </error>
+  <error>
+    <name>Alexander Pushkin</name>
+    <nationality>Russian</nationality>
+    <bprice>500</bprice>
+  </error>
+  <error period="classical">
+    <name>Plato</name>
+    <nationality>Greek</nationality>
+    <bprice>650</bprice>
+  </error>
+</errors>

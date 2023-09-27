@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="entity.xsl"?>
+<!DOCTYPE cls [
+<!ENTITY ninth
+"1234 Loudon Street.Floor 9">
+<!ENTITY eighth
+"1234 Loudon Street. Floor 8">
+<!ENTITY seventh
+"1234 Loudon Street.Floor 7">
+]>
+<clients>
+	<client>
+	<name> Mr Highest Rise</name>
+	<address>&ninth;</address>
+	<phone>+91 33 23561345</phone>
+	</client>
+	<client>
+	<name> Mr Higher Rise</name>
+	<address>&ninth;</address>
+	<phone>+91 33 23561111</phone>
+	</client>
+	<client>
+	<name> Mr High Rise</name>
+	<address>&ninth;</address>
+	<phone>+91 33 23561346</phone>
+	</client>
+	<client>
+	<name> Mr Low Rise</name>
+	<address>&seventh;</address>
+	<phone>+91 33 23561289</phone>
+	</client>
+	<client>
+	<name> Mr Lower Rise</name>
+	<address>&eighth;&seventh;</address>
+	<phone>+91 33 23561945</phone>
+	</client>
+</clients>

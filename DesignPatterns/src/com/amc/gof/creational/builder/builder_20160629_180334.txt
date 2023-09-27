@@ -1,0 +1,6 @@
+WARNING - 18:03:34: First conversion pass
+ERROR - 18:03:34: java.net.MalformedURLException: unknown protocol: pathmap
+WARNING - 18:03:47: Convert com.amc.gof.creational.builder
+WARNING - 18:03:47: First conversion pass
+ERROR - 18:03:47: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: Invalid byte 2 of 2-byte UTF-8 sequence.
+ERROR - 18:03:47: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: Invalid byte 2 of 2-byte UTF-8 sequence.

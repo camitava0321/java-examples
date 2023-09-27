@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deployment-plan>
+  <file-entry>
+    <name>sun-application.xml</name>
+    <content>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE sun-application PUBLIC "-//Sun Microsystems, Inc.//DTD Application Server 8.0 J2EE Application 1.4//EN" "http://www.sun.com/software/appserver/dtds/sun-application_1_4-0.dtd"&gt;
+&lt;sun-application&gt;
+  &lt;web&gt;
+    &lt;web-uri&gt;ConverterApp-WebModule.war&lt;/web-uri&gt;
+    &lt;context-root&gt;/ConverterApp-WebModule&lt;/context-root&gt;
+  &lt;/web&gt;
+&lt;/sun-application&gt;
+</content>
+  </file-entry>
+</deployment-plan>

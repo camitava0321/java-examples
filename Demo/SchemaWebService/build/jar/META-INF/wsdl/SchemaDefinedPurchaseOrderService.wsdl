@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<definitions name="SchemaDefinedPurchaseOrderService" targetNamespace="urn:SchemaDefinedPurchaseOrderService" xmlns:tns="urn:SchemaDefinedPurchaseOrderService" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <types>
+    <schema targetNamespace="urn:SchemaDefinedPurchaseOrderService" xmlns:tns="urn:SchemaDefinedPurchaseOrderService" xmlns:soap11-enc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="http://www.w3.org/2001/XMLSchema">
+      <complexType name="submitPO">
+        <sequence>
+          <element name="PurchaseOrder_1" type="tns:PurchaseOrder" nillable="true"/></sequence></complexType>
+      <complexType name="PurchaseOrder">
+        <sequence>
+          <element name="billTo" type="tns:Address" nillable="true"/>
+          <element name="createDate" type="dateTime" nillable="true"/>
+          <element name="items" type="tns:LineItem" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+          <element name="poId" type="string" nillable="true"/>
+          <element name="shipTo" type="tns:Address" nillable="true"/></sequence></complexType>
+      <complexType name="Address">
+        <sequence>
+          <element name="city" type="string" nillable="true"/>
+          <element name="postalCode" type="string" nillable="true"/>
+          <element name="state" type="string" nillable="true"/>
+          <element name="street" type="string" nillable="true"/></sequence></complexType>
+      <complexType name="LineItem">
+        <sequence>
+          <element name="itemId" type="string" nillable="true"/>
+          <element name="price" type="float"/>
+          <element name="quantity" type="int"/></sequence></complexType>
+      <complexType name="submitPOResponse">
+        <sequence>
+          <element name="result" type="string" nillable="true"/></sequence></complexType>
+      <element name="submitPO" type="tns:submitPO"/>
+      <element name="submitPOResponse" type="tns:submitPOResponse"/></schema></types>
+  <message name="SchemaDefinedPurchaseOrderServiceSEI_submitPO">
+    <part name="parameters" element="tns:submitPO"/></message>
+  <message name="SchemaDefinedPurchaseOrderServiceSEI_submitPOResponse">
+    <part name="result" element="tns:submitPOResponse"/></message>
+  <portType name="SchemaDefinedPurchaseOrderServiceSEI">
+    <operation name="submitPO">
+      <input message="tns:SchemaDefinedPurchaseOrderServiceSEI_submitPO"/>
+      <output message="tns:SchemaDefinedPurchaseOrderServiceSEI_submitPOResponse"/></operation></portType>
+  <binding name="SchemaDefinedPurchaseOrderServiceSEIBinding" type="tns:SchemaDefinedPurchaseOrderServiceSEI">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <operation name="submitPO">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/></input>
+      <output>
+        <soap:body use="literal"/></output></operation></binding>
+  <service name="SchemaDefinedPurchaseOrderService">
+    <port name="SchemaDefinedPurchaseOrderServiceSEIPort" binding="tns:SchemaDefinedPurchaseOrderServiceSEIBinding">
+      <soap:address location="REPLACE_WITH_ACTUAL_URL"/></port></service></definitions>

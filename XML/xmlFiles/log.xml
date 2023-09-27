@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<log>
+	<record>
+		<sequence>001</sequence>
+		<date>26-09-2013</date>
+		<message>Server Started</message>
+	</record>
+	<record>
+		<sequence>002</sequence>
+		<date>27-09-2013</date>
+		<message>Server Stopped</message>
+	</record>
+	<record>
+		<sequence>003</sequence>
+		<date>28-09-2013</date>
+		<message>Server Suspended</message>
+	</record>
+	<record>
+		<sequence>004</sequence>
+		<date>29-09-2013</date>
+		<message>Server Unsuspended</message>
+	</record>
+	<record>
+		<sequence>005</sequence>
+		<date>30-09-2013</date>
+		<message>Server Started</message>
+	</record>
+</log>

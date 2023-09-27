@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="error.xsl"?>
+<errors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../../xmlSchemas/error.xsd">
+  <error errorid="E101001">
+    <category>ERROR</category>
+    <errortext>This is error</errortext>
+    <icon>ERROR_ICON</icon>
+    <action>
+      <actionid>1</actionid>
+      <actionname>OK</actionname>
+      <default>true</default>
+    </action>
+  </error>
+  <error errorid="E101002">
+    <category>INFO</category>
+    <errortext>This is information</errortext>
+    <icon>INFO_ICON</icon>
+    <action>
+      <actionid>1</actionid>
+      <actionname>OK</actionname>
+      <default>true</default>
+    </action>
+  </error>
+  <error errorid="E101003">
+    <category>ERROR</category>
+    <errortext>This is error</errortext>
+    <icon>ERROR_ICON</icon>
+    <action>
+      <actionid>1</actionid>
+      <actionname>OK</actionname>
+      <default>true</default>
+    </action>
+  </error>
+  <error errorid="E101004">
+    <category>FATAL</category>
+    <errortext>This is fatal error.</errortext>
+    <icon>FATAL_ICON</icon>
+    <action>
+      <actionid>1</actionid>
+      <actionname>OK</actionname>
+      <default>true</default>
+    </action>
+  </error>
+  <error errorid="E101005">
+    <category>WARNING</category>
+    <errortext>This is warning</errortext>
+    <icon>WARNING_ICON</icon>
+    <action>
+      <actionid>1</actionid>
+      <actionname>Yes</actionname>
+      <default>true</default>
+    </action>
+    <action>
+      <actionid>2</actionid>
+      <actionname>No</actionname>
+      <default>false</default>
+    </action>
+  </error>
+</errors>

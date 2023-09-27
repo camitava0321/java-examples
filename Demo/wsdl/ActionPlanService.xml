@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="exprsdataservice.ecm.lmig.com" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="exprsdataservice.ecm.lmig.com" xmlns:intf="exprsdataservice.ecm.lmig.com" xmlns:tns1="http://businessobjects.ecm.lmig.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="exprsdataservice.ecm.lmig.com" xmlns="http://www.w3.org/2001/XMLSchema">
+   <import namespace="http://businessobjects.ecm.lmig.com"/>
+   <element name="getActionPlan">
+    <complexType>
+     <sequence>
+      <element name="in0" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getActionPlanResponse">
+    <complexType>
+     <sequence>
+      <element name="getActionPlanReturn" type="tns1:ActionPlan"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getTargetOutcome">
+    <complexType>
+     <sequence>
+      <element name="in0" type="xsd:int"/>
+      <element name="in1" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getTargetOutcomeResponse">
+    <complexType>
+     <sequence>
+      <element name="getTargetOutcomeReturn" type="tns1:TargetOutcome"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getActionPlanActivityList">
+    <complexType>
+     <sequence>
+      <element name="in0" type="xsd:int"/>
+      <element name="in1" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getActionPlanActivityListResponse">
+    <complexType>
+     <sequence>
+      <element maxOccurs="unbounded" name="getActionPlanActivityListReturn" type="xsd:anyType"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getGoalList">
+    <complexType>
+     <sequence>
+      <element name="in0" type="xsd:int"/>
+      <element name="in1" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getGoalListResponse">
+    <complexType>
+     <sequence>
+      <element maxOccurs="unbounded" name="getGoalListReturn" type="xsd:anyType"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getGoal">
+    <complexType>
+     <sequence>
+      <element name="in0" type="xsd:int"/>
+      <element name="in1" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getGoalResponse">
+    <complexType>
+     <sequence>
+      <element name="getGoalReturn" type="tns1:Goal"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getActionPlanActivity">
+    <complexType>
+     <sequence>
+      <element name="in0" type="xsd:int"/>
+      <element name="in1" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getActionPlanActivityResponse">
+    <complexType>
+     <sequence>
+      <element name="getActionPlanActivityReturn" type="tns1:ActionPlanActivity"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+  <schema elementFormDefault="qualified" targetNamespace="http://businessobjects.ecm.lmig.com" xmlns="http://www.w3.org/2001/XMLSchema">
+   <complexType name="CommonObject">
+    <sequence/>
+   </complexType>
+   <complexType name="ActionPlan">
+    <complexContent>
+     <extension base="tns1:CommonObject">
+      <sequence>
+       <element name="targetOutcomeID" type="xsd:int"/>
+       <element name="actionPlanIdentifier" nillable="true" type="xsd:int"/>
+       <element name="claimID" type="xsd:int"/>
+      </sequence>
+     </extension>
+    </complexContent>
+   </complexType>
+   <complexType name="TargetOutcome">
+    <complexContent>
+     <extension base="tns1:CommonObject">
+      <sequence>
+       <element name="targetOutcomeChangeReasonCode" nillable="true" type="xsd:string"/>
+       <element name="targetOutcomeIdentifier" nillable="true" type="xsd:int"/>
+       <element name="targetOutcomeDesc" nillable="true" type="xsd:string"/>
+       <element name="targetOutcomeStatus" nillable="true" type="xsd:string"/>
+       <element name="targetOutcomeChangeReasonDesc" nillable="true" type="xsd:string"/>
+       <element name="targetOutcomeCode" nillable="true" type="xsd:string"/>
+       <element name="targetDatetime" nillable="true" type="xsd:dateTime"/>
+       <element name="targetOutcomeStatusDesc" nillable="true" type="xsd:string"/>
+      </sequence>
+     </extension>
+    </complexContent>
+   </complexType>
+   <complexType name="Goal">
+    <complexContent>
+     <extension base="tns1:CommonObject">
+      <sequence>
+       <element name="goalTypeCode" nillable="true" type="xsd:string"/>
+       <element name="actionPlanID" type="xsd:int"/>
+       <element name="goalTypeDesc" nillable="true" type="xsd:string"/>
+       <element name="goalIdentifier" nillable="true" type="xsd:int"/>
+       <element name="goalStatusCode" nillable="true" type="xsd:string"/>
+       <element name="goalCompletionDate" nillable="true" type="xsd:dateTime"/>
+       <element name="goalStatusDesc" nillable="true" type="xsd:string"/>
+      </sequence>
+     </extension>
+    </complexContent>
+   </complexType>
+   <complexType name="ActionPlanActivity">
+    <complexContent>
+     <extension base="tns1:CommonObject">
+      <sequence>
+       <element name="actionPlanActivityStatusDesc" nillable="true" type="xsd:string"/>
+       <element name="actionPlanActivityTypeDesc" nillable="true" type="xsd:string"/>
+       <element name="actionPlanActivityCompletionDatetime" nillable="true" type="xsd:dateTime"/>
+       <element name="goalID" type="xsd:int"/>
+       <element name="actionPlanActivityStatusCode" nillable="true" type="xsd:string"/>
+       <element name="actionPlanActivityIdentifier" nillable="true" type="xsd:int"/>
+       <element name="actionPlanActivityTypeCode" nillable="true" type="xsd:string"/>
+      </sequence>
+     </extension>
+    </complexContent>
+   </complexType>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="getActionPlanActivityListResponse">
+
+      <wsdl:part element="intf:getActionPlanActivityListResponse" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="getGoalListResponse">
+
+      <wsdl:part element="intf:getGoalListResponse" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="getGoalListRequest">
+
+      <wsdl:part element="intf:getGoalList" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="getActionPlanRequest">
+
+      <wsdl:part element="intf:getActionPlan" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="getGoalRequest">
+
+      <wsdl:part element="intf:getGoal" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="getActionPlanActivityResponse">
+
+      <wsdl:part element="intf:getActionPlanActivityResponse" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="getGoalResponse">
+
+      <wsdl:part element="intf:getGoalResponse" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="getActionPlanActivityRequest">
+
+      <wsdl:part element="intf:getActionPlanActivity" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="getTargetOutcomeResponse">
+
+      <wsdl:part element="intf:getTargetOutcomeResponse" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="getTargetOutcomeRequest">
+
+      <wsdl:part element="intf:getTargetOutcome" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="getActionPlanResponse">
+
+      <wsdl:part element="intf:getActionPlanResponse" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="getActionPlanActivityListRequest">
+
+      <wsdl:part element="intf:getActionPlanActivityList" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:portType name="ActionPlanService">
+
+      <wsdl:operation name="getActionPlan">
+
+         <wsdl:input message="intf:getActionPlanRequest" name="getActionPlanRequest"/>
+
+         <wsdl:output message="intf:getActionPlanResponse" name="getActionPlanResponse"/>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getTargetOutcome">
+
+         <wsdl:input message="intf:getTargetOutcomeRequest" name="getTargetOutcomeRequest"/>
+
+         <wsdl:output message="intf:getTargetOutcomeResponse" name="getTargetOutcomeResponse"/>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getActionPlanActivityList">
+
+         <wsdl:input message="intf:getActionPlanActivityListRequest" name="getActionPlanActivityListRequest"/>
+
+         <wsdl:output message="intf:getActionPlanActivityListResponse" name="getActionPlanActivityListResponse"/>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getGoalList">
+
+         <wsdl:input message="intf:getGoalListRequest" name="getGoalListRequest"/>
+
+         <wsdl:output message="intf:getGoalListResponse" name="getGoalListResponse"/>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getGoal">
+
+         <wsdl:input message="intf:getGoalRequest" name="getGoalRequest"/>
+
+         <wsdl:output message="intf:getGoalResponse" name="getGoalResponse"/>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getActionPlanActivity">
+
+         <wsdl:input message="intf:getActionPlanActivityRequest" name="getActionPlanActivityRequest"/>
+
+         <wsdl:output message="intf:getActionPlanActivityResponse" name="getActionPlanActivityResponse"/>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="ActionPlanServiceSoapBinding" type="intf:ActionPlanService">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="getActionPlan">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getActionPlanRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getActionPlanResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getTargetOutcome">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getTargetOutcomeRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getTargetOutcomeResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getActionPlanActivityList">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getActionPlanActivityListRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getActionPlanActivityListResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getGoalList">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getGoalListRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getGoalListResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getGoal">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getGoalRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getGoalResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getActionPlanActivity">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getActionPlanActivityRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getActionPlanActivityResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="ActionPlanServiceService">
+
+      <wsdl:port binding="intf:ActionPlanServiceSoapBinding" name="ActionPlanService">
+
+         <wsdlsoap:address location="http://10.92.128.71:9082/exprsdataservice/services/ActionPlanService"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	001: 26-09-2013: Server Started
+	002: 27-09-2013: Server Stopped
+	003: 28-09-2013: Server Suspended
+	004: 29-09-2013: Server Unsuspended
+	005: 30-09-2013: Server Started

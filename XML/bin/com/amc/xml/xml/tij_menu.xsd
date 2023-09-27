@@ -1,0 +1,38 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/1999/XMLSchema">
+  <xsd:annotation>
+    <xsd:documentation>
+      TIJ Restaurant Menu Schema.
+    </xsd:documentation>
+  </xsd:annotation>
+ 
+   <xsd:element name="restaurant" 
+        type="restaurantType"/>
+   
+   <xsd:complexType name="restaurantType">
+     <xsd:element name="name" type="xsd:string"/>
+     <xsd:element name="address" type="addressType"/>
+     <xsd:element name="phone" type="xsd:string"/>
+     <xsd:element name="menu" type="menuType"/>
+   </xsd:complexType>  
+   
+   <xsd:complexType name="menuType">
+     <xsd:attribute name="desc" type="xsd:string"/>
+     <xsd:element name="menugroup" 
+          type="menugroupType" minOccurs="1"
+          maxOccurs=”unbounded”/>
+  </xsd:complexType>
+ 
+   <xsd:complexType name="menugroupType">
+     <xsd:element name="menuitem" minOccurs="1"
+                  maxOccurs=”unbounded”>
+         <xsd:complexType>
+         <xsd:element name="name" type="xsd:string" 
+              minOccurs="1"/>
+         <xsd:element name="price" type="xsd:string" 
+              minOccurs="0"/>
+         <xsd:element name="description" 
+              type="xsd:string" minOccurs="0"/>
+      </xsd:complexType>         
+    </xsd:element>
+   </xsd:complexType>
+</xsd:schema>

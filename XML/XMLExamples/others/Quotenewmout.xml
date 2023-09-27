@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="Quotenewmout.xsl"?>
+<QuoteNewMOut>
+	<RateDate Year="2000" Month="11" Day="1"/>
+	<ScriptDate Year="2000" Month="11" Day="1"/>
+	<CurrentDate Year="2000" Month="11" Day="1"/>
+	<ManufList>
+		<Manuf>ALFA ROMEO</Manuf>
+		<Manuf>AMC</Manuf>
+		<Manuf>ARO LANDCARS</Manuf>
+		<Manuf>ASIA</Manuf>
+		<Manuf>ASTON MARTIN</Manuf>
+		<Manuf>AUDI</Manuf>
+		<Manuf>AUSTIN</Manuf>
+		<Manuf>AUSTIN/ROVER</Manuf>
+		<Manuf>BENTLEY</Manuf>
+		<Manuf>BMW</Manuf>
+		<Manuf>BRISTOL</Manuf>
+		<Manuf>CHRYSLER (U.K.)</Manuf>
+		<Manuf>CITROEN</Manuf>
+		<Manuf>DACIA</Manuf>
+		<Manuf>DAIHATSU</Manuf>
+		<Manuf>DAIMLER</Manuf>
+		<Manuf>DE LOREAN</Manuf>
+		<Manuf>FERRARI</Manuf>
+		<Manuf>FIAT</Manuf>
+		<Manuf>FORD</Manuf>
+		<Manuf>FSO</Manuf>
+		<Manuf>HONDA</Manuf>
+		<Manuf>HYUNDAI</Manuf>
+		<Manuf>ISUZU</Manuf>
+		<Manuf>JAGUAR</Manuf>
+		<Manuf>JEEP</Manuf>
+		<Manuf>JENSEN</Manuf>
+		<Manuf>KIA</Manuf>
+		<Manuf>LADA</Manuf>
+		<Manuf>LANCIA</Manuf>
+		<Manuf>LAND ROVER</Manuf>
+		<Manuf>LEXUS</Manuf>
+		<Manuf>LONSDALE</Manuf>
+		<Manuf>LOTUS</Manuf>
+		<Manuf>MAHINDRA</Manuf>
+		<Manuf>MASERATI</Manuf>
+		<Manuf>MAZDA</Manuf>
+		<Manuf>MERCEDES</Manuf>
+		<Manuf>MG</Manuf>
+		<Manuf>MITSUBISHI/COLT</Manuf>
+		<Manuf>MORGAN</Manuf>
+		<Manuf>MORRIS</Manuf>
+		<Manuf>NISSAN/DATSUN</Manuf>
+		<Manuf>OPEL</Manuf>
+		<Manuf>PEUGEOT</Manuf>
+		<Manuf>PORSCHE</Manuf>
+		<Manuf>PRINCESS</Manuf>
+		<Manuf>PROTON</Manuf>
+		<Manuf>RELIANT</Manuf>
+		<Manuf>RENAULT</Manuf>
+		<Manuf>ROLLS ROYCE</Manuf>
+		<Manuf>ROVER</Manuf>
+		<Manuf>SAAB</Manuf>
+		<Manuf>SAO</Manuf>
+		<Manuf>SEAT</Manuf>
+		<Manuf>SIMCA</Manuf>
+		<Manuf>SKODA</Manuf>
+		<Manuf>SUBARU</Manuf>
+		<Manuf>SUZUKI</Manuf>
+		<Manuf>TALBOT</Manuf>
+		<Manuf>TOYOTA</Manuf>
+		<Manuf>TRIUMPH</Manuf>
+		<Manuf>TVR</Manuf>
+		<Manuf>VAUXHALL</Manuf>
+		<Manuf>VOLKSWAGEN</Manuf>
+		<Manuf>VOLVO</Manuf>
+		<Manuf>YUGO</Manuf>
+	</ManufList>
+	<TitleList>
+		<Title Gender="M">Mr</Title>
+		<Title Gender="F">Mrs</Title>
+		<Title Gender="F">Miss</Title>
+		<Title Gender="F">Ms</Title>
+	</TitleList>
+	<OccupList>
+		<Occup ExtCode="7000" IntCode="007000">Professional</Occup>
+		<Occup ExtCode="7005" IntCode="007005">Company Director</Occup>
+		<Occup ExtCode="7010" IntCode="007010">Skilled</Occup>
+		<Occup ExtCode="7015" IntCode="007015">Manual</Occup>
+		<Occup ExtCode="7020" IntCode="007020">Clerical</Occup>
+		<Occup ExtCode="7025" IntCode="007025">Customer Services</Occup>
+		<Occup ExtCode="7030" IntCode="007030">H M Forces</Occup>
+		<Occup ExtCode="7035" IntCode="007035">Drivers</Occup>
+		<Occup ExtCode="7040" IntCode="007040">Motor Trade</Occup>
+		<Occup ExtCode="7045" IntCode="007045">Housewife/Husband</Occup>
+		<Occup ExtCode="7050" IntCode="007050">Proprietor</Occup>
+		<Occup ExtCode="7100" IntCode="007100">Retired</Occup>
+		<Occup ExtCode="7105" IntCode="007105">Unemployed</Occup>
+	</OccupList>
+	<RescueRivalList>
+		<RescueRival>
+			<RivalCompany Ident="01">AA</RivalCompany>
+			<RivalProduct Ident="01">AA LEVEL 100</RivalProduct>
+		</RescueRival>
+		<RescueRival>
+			<RivalCompany Ident="01">AA</RivalCompany>
+			<RivalProduct Ident="02">AA LEVEL  200</RivalProduct>
+		</RescueRival>
+		<RescueRival>
+			<RivalCompany Ident="01">AA</RivalCompany>
+			<RivalProduct Ident="03">AA LEVEL 300</RivalProduct>
+		</RescueRival>
+		<RescueRival>
+			<RivalCompany Ident="01">AA</RivalCompany>
+			<RivalProduct Ident="04">AA LEVEL 400</RivalProduct>
+		</RescueRival>
+		<RescueRival>
+			<RivalCompany Ident="02">RAC</RivalCompany>
+			<RivalProduct Ident="01">BASIC</RivalProduct>
+		</RescueRival>
+		<RescueRival>
+			<RivalCompany Ident="02">RAC</RivalCompany>
+			<RivalProduct Ident="02">BASIC + AT HOME</RivalProduct>
+		</RescueRival>
+		<RescueRival>
+			<RivalCompany Ident="02">RAC</RivalCompany>
+			<RivalProduct Ident="03">BASIC + RECOVERY</RivalProduct>
+		</RescueRival>
+		<RescueRival>
+			<RivalCompany Ident="02">RAC</RivalCompany>
+			<RivalProduct Ident="04">STANDARD COVER</RivalProduct>
+		</RescueRival>
+		<RescueRival>
+			<RivalCompany Ident="03">OTHER</RivalCompany>
+			<RivalProduct Ident="01"/>
+		</RescueRival>
+		<RescueRival>
+			<RivalCompany Ident="04">NONE</RivalCompany>
+			<RivalProduct Ident="01"/>
+		</RescueRival>
+	</RescueRivalList>
+	<ReturnCode>000</ReturnCode>
+</QuoteNewMOut>

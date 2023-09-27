@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Copyright 2004 Sun Microsystems, Inc.  All rights reserved.  You may not modify, use, reproduce, or distribute this software except in compliance with the terms of the License at: 
+ http://developer.sun.com/berkeley_license.html
+ $Id: schemadefinedpurchaseorderservice-config.xml,v 1.1 2005/03/22 21:45:46 smitha Exp $ -->
+
+<configuration  xmlns="http://java.sun.com/xml/ns/jax-rpc/ri/config">
+  <service name="SchemaDefinedPurchaseOrderService"
+           targetNamespace="urn:SchemaDefinedPurchaseOrderService"
+           typeNamespace="urn:SchemaDefinedPurchaseOrderService"
+           packageName="com.sun.j2ee.blueprints.objectposervice">
+    <interface name="com.sun.j2ee.blueprints.objectposervice.SchemaDefinedPurchaseOrderServiceSEI"/>
+    <typeMappingRegistry />
+  </service>
+</configuration>
+
+

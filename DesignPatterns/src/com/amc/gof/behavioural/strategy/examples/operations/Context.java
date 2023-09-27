@@ -1,0 +1,21 @@
+/**
+ * 
+ */
+package com.amc.gof.behavioural.strategy.examples.operations;
+
+/**
+ * @author Amitava Chakraborty
+ * Oct 12, 2002 
+ * Context that uses the strategy
+ */
+public class Context {
+   private Strategy strategy;
+
+   public Context(Strategy strategy){
+      this.strategy = strategy;
+   }
+
+   public int executeStrategy(int num1, int num2){
+      return strategy.doOperation(num1, num2);
+   }
+}

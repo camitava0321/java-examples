@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<?xml:stylesheet type="text/xsl" href="resume.xsl" ?>
+<resume>
+  <name >Amitava Chakraborty</name>
+  <email>achakra9@in.ibm.com</email>
+  <address>
+     <street>61/7 Station Road</street>
+     <area>Dhakuria</area>
+     <city>Kolkata 700078, India</city>
+     <pin>700031</pin>
+  </address>
+  <qual >
+    <degree id="M.Sc(Tech)- Optics and OptoElectronics" inst="University Of Calcutta" yr="1994"/>
+    <degree id="B.Sc. - Physics Hons." inst="University Of Calcutta" yr="1991"/>
+  </qual>
+  <skills>
+    <skill cat="Operating System" env1="IBM" env2="Non-IBM" elem1="MVS/ESA" elem2="Widows 95, UNIX , MS-DOS, Windows NT"/>
+    <skill cat="Programming Languages" env1="IBM" env2="Non-IBM" elem1="REXX,  COBOL II, JCL, EASYTRIEVE" elem2="C, HTML, JAVA (Servlet, Applet)"/>
+    <skill cat="Databases and Tools" env1="IBM" env2="Non-IBM" elem1="IDMS, MQSeries for NT" elem2="MS-ACCESS, MS-PROJECT."/>
+    <skill cat="Other Utilities" env1="IBM" env2="Non-IBM" elem1="ENDEVOR, PANVALET, FILE-AID, TSO/ISPF(i.e. TABLES, PANELS, SKELETONS), CA-7 scheduler" elem2="XML4J, LOTUSXSL"/>
+  </skills>
+<summ>
+4+ years of architecting experience in financial sector with various methodologies (SOA, EAI). 
+</summ>
+<projects>
+   <project>
+     <title> Self learning system for Proficiency Augmentation Center </title>
+     <dur> From Oct 1999 till Jan 1999</dur>
+     <client> CTS internal </client>
+     <loc>Calcutta </loc>
+     <role>Programmer </role>
+     <hard> Pentium PC</hard>
+     <os> Windows 95</os>
+     <lang> HTML, JavaScripts, JAVA (Applet, Servelet)</lang>
+     <others> Oracle, JDK 1.1.6 and JSDK 2.0</others>
+     <desc> This is a in-house project for Proficiency Augmentation Center (PAC), CTS. It's a workflow, where an associate can declare that he/she is willing to self-Learn some subject, which gets approved by the Project Manager and goes to Training department. The person while registering has to mention a date when he/she thinks that he/she can appear for an evaluation exam or an exit test. If the associate qualifies the test, he/she is marked by training department as 'Trained' in that specific subject. Training department can pull out a list of associates who has registered for such kind of self learning activity, and how many of them has cleared the exams. The whole thing is done with Java applet/IIS/Servlet running on Servletexec/Thin JDBC Drivers for Oracle/and Oracle database in the backend. and JDK 1.1.6 was used for development.</desc>
+     <indv>Was assigned as a programmer from design stage till implementation of the project. The responsibilities were to produce design document, code in Java, JavaScript and HTML, code review, testing as per Quality guidelines in CTS.</indv>
+   </project>
+   <project>
+     <title>Data Mapping Tool for New Business Conversion  </title>
+     <dur>July 1999 till Oct 1999 </dur>
+     <client> CTS Internal</client>
+     <loc> Calcutta, India </loc>
+     <role>Module Leader </role>
+     <hard>Pentium III, IBM M/F</hard>
+     <os> Windows 95, MVS</os>
+     <lang> HTML 3.x, JavaScript, ASP, VB Script, REXX, ISPF Tables, Panels and Skel, Java Servlet</lang>
+     <others> MS-Access</others>
+     <desc> This is in-house development project undertaken to reduce time in New Business Conversion projects in First Data Investor Services Group(ISG), USA. The application will run in IBM environment with a user interface provided through HTML pages using ASP and JAVAScript. New business conversion at ISG requires data mapping from one file format to another file format. The conversion rule is applied in the field level. Provision for applying business rule is given in the Workstation. The rule table is kept at the Access database and exported to IBM mainframe as text file with predefined delimiter. The rule table is again imported to ISPF table and a COBOL program is generated that will apply business rule in the form of COBOL statements so that data conversion can be done in the mainframe.</desc>
+     <indv> Was assigned into the project as a module leader with four programmers. The primary responsibilities were to write program specification, code review, define strategy for testing and implementation.</indv>
+   </project>
+   <project>
+     <title> PRODUCTION support for PAR FULL SERVICE Dedicated team </title>
+     <dur> Jan 1999 till June 1999</dur>
+     <client>First Data Investor Services Group  </client>
+     <loc>Westborough, MA</loc>
+     <role>Programmer  </role>
+     <hard> Pentium II, IBM M/F</hard>
+     <os> Windows 95, MVS</os>
+     <lang> VS COBOL II, EASYTRIEVE, JCL, ENDEVOR, PANVALET, FILE-AID, CA-7 Scheduler</lang>
+     <others> IDMS 14.0 </others>
+     <desc> This is an enhancement and maintenance project done from on-site/offshore. Any problem reported by the client or enhancement to be done in the existing application is being directly reported to the team member working at offshore as client referral. Work involved a thorough understanding of the application from business requirement to system requirement. Work involves significant amount of development and testing skill in COBOL, EASYTRIEVE within a small turnaround time.</desc>
+     <indv> Being a team member (in the Client's group) participated in Analysis, Design, coding, unit testing, system testing, implementation and initial production support for the Full Service Clients.</indv>
+   </project>
+   <project>
+     <title>FSA and PAR Y2K Review </title>
+     <dur>June 1998 till Dec 1999 </dur>
+     <client> PFPC Inc.</client>
+     <loc> Calcutta, India </loc>
+     <role> Module Leader</role>
+     <hard> Pentium based Compaq PC, IBM M/F</hard>
+     <os> Windows 95, MVS</os>
+     <lang> VS COBOL II, JCL, EASYTRIEVE, ENDEVOR, PANVALET .</lang>
+     <others>  MS-ACCESS,MS-Project.</others>
+     <desc> This project is a part of the SELC in all development that is happening in PAR and FSA application in First Data Investor Services Group. The activities are checking COBOL, EASYTRIEVE, JCL, PROC, CNTL card for Y2K compliance. The project was executed in offshore/on-site model. The delivery of the code with the Y2K compliance certification used to be done on a daily basis. The activities are very much crucial, as any defect in the review process will cause entry of YR2000 bug in the system. Review process is very much driven by checklists.</desc>
+     <indv> Was assigned the project leader for this work. The project team had peak strength of 6 persons. The responsibilities were to define the strategy of analysis, maintaining client communication, resolving issues, carrying out Quality Control activities and ISO works etc. </indv>
+   </project>
+   <project>
+     <title> Year 2000 Enabling of Personal Asset Record keeping (PAR) system</title>
+     <dur> Oct 1997 till July 1998</dur>
+     <client> First Data Investor Services Group</client>
+     <loc> Westborough, MA </loc>
+     <role>Module Leader </role>
+     <hard> Pentium based Compaq PC, IBM M/F</hard>
+     <os> Windows 95, MVS</os>
+     <lang> VS COBOL II, JCL, EASYTRIEVE,  ENDEVOR, PANVALET.</lang>
+     <others> MS-ACCESS, MS-Project, IDMS</others>
+     <desc>The Personal Asset Record keeping (PAR) system is involved in the business of processing mutual fund and is developed and maintained by First Data Investor Services Group of First Data Corporation, USA. During the project life cycle, various conversion strategies were evaluated and the best suited was taken for YR2000 conversion. The analysis was carried by the YR2000 Impact Analyzer and the code conversion was done mostly by manually. During System Testing, the Post YR2000 environment was created by properly aging the test data to the next century. The System Test schedules are developed by CA-7 scheduler and MS-Projects was used for monitoring and tracking.</desc>
+     <indv>Was assigned the module leader for this work. The project team had peak strength of 30 persons. The responsibilities were to define the strategy of impact analysis and code conversion, maintaining client communication, resolving issues, carrying out Quality Control activities and ISO works etc.  </indv>
+   </project>
+   <project>
+     <title>Enhancement of Year 2000 Impact Analyzer and Code Changer  </title>
+     <dur> May 1997 to September 1997</dur>
+     <client> CTS Internal</client>
+     <loc> Chennai, India </loc>
+     <role> Programmer</role>
+     <hard> Pentium based Compaq PC, IBM M/F</hard>
+     <os> Windows 95, MVS</os>
+     <lang> REXX, ISPF SKELS, PANLES and TABLES</lang>
+     <others> IDMS</others>
+     <desc> This is a product marketed by Softworks Inc. developed by CTS. It is used for analysis of YR2000 impact on application developed in COBOL. It was not capable for analysis of application that has IDMS database. It was enhanced for analysis of IDMS embedded COBOL code.</desc>
+     <indv> Assigned into the project as a programmer in REXX and other dialog management services available in IBM. Was involved in writing program specifications, coding, unit testing and integration testing.</indv>
+   </project>
+   <project>
+     <title> Inventory Tool</title>
+     <dur>March 1997 to May 1997 </dur>
+     <client> CTS Internal</client>
+     <loc> Calcutta, India </loc>
+     <role> Programmer</role>
+     <hard> Pentium based Compaq PC, IBM M/F</hard>
+     <os> Windows 95, MVS</os>
+     <lang> REXX, ISPF SKELS, PANLES and TABLES</lang>
+     <others> </others>
+     <desc> This is an application developed in mainframe that is used for generating the detail inventory for any mainframe batch application. It provides the cross-reference between components used in a particular application. It also generates reports on the total lines of code that helps to estimate the effort required for that application.</desc>
+     <indv> Was assigned into the project as a team member with other two programmers. The responsibilities were to prepare program specifications, coding, unit testing, system testing and implementation of software in IBM mainframe.</indv>
+   </project>
+   <project>
+     <title>Test Coverage Analyzer </title>
+     <dur> Jan 1997 to Feb 1997</dur>
+     <client> CTS Internal</client>
+     <loc> Chennai, India </loc>
+     <role>Programmer </role>
+     <hard> Pentium based Compaq PC, IBM M/F</hard>
+     <os> Windows 95, MVS</os>
+     <lang> REXX, ISPF SKELS, PANLES and TABLES</lang>
+     <others> </others>
+     <desc>This is an in house product to check the coverage achieved during testing a YR2000 impacted COBOL module. It generates reports showing how many YR2000 impacted COBOL verbs it comes across before compilation and inserts meaningful probes inside the source. After a particular testing schedule, it analyses the probes those appears in the output during execution and generates detailed statistics about all the impacted COBOL verbs (viz. Verb type, line number, place of occurrence (i.e. whether in source, copybook or in any other sub-program called by the source), number of times the verb was hit during runtime etc.). It also delivers the coverage statistics that is achieved for particular test schedule. </desc>
+     <indv> Was assigned into the project as a team member with other two programmers. The responsibilities were to prepare program specifications, coding, unit testing, system testing and implementation of software in IBM mainframe.</indv>
+   </project>
+   <project>
+     <title> </title>
+     <dur> </dur>
+     <client> </client>
+     <loc> </loc>
+     <role> </role>
+     <hard> </hard>
+     <os> </os>
+     <lang> </lang>
+     <others> </others>
+     <desc> </desc>
+     <indv> </indv>
+   </project>
+</projects>
+</resume>
