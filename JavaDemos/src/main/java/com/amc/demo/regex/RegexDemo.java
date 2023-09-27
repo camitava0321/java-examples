@@ -8,9 +8,8 @@ import java.io.FileNotFoundException;
 import java.io.FilenameFilter;
 import java.util.Scanner;
 import java.util.Stack;
+import java.util.logging.Logger;
 import java.util.regex.Pattern;
-
-import org.apache.log4j.Logger;
 
 /**
  * This class may be used to search a series of 
@@ -24,7 +23,7 @@ import org.apache.log4j.Logger;
  */
 public class RegexDemo implements Runnable{
 
-	private static final Logger logger = Logger.getLogger(RegexDemo.class);
+	private static final Logger logger = Logger.getLogger(RegexDemo.class.getName());
 	private String []regexps=null;
 	private File []files=null;
 	private Pattern []patterns=null;

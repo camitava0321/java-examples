@@ -10,7 +10,6 @@ class ExmRuntime
 		/* Use of Runtime Object */
 		Runtime env = Runtime.getRuntime();
 		
-		env.traceInstructions(true);
 		try{
 			System.out.println("Atempting to start a new process");
 			Process ps = env.exec("dir ",null);
@@ -22,7 +21,6 @@ class ExmRuntime
 		System.out.println("\nTotal Memory : " + env.totalMemory() +
 			"\nFree Memory : " + env.freeMemory());
 
-		env.traceInstructions(false);
 
 		
 		/* Use of System Object */

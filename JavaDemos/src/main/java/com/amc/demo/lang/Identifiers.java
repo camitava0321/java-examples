@@ -13,7 +13,7 @@ public class Identifiers
 
         Thread Thread;                        /* Is perfectly valid          */
 
-        int _any,$or,œAnd;                    /* Identifier can start with   */
+        int _any,$or,_And;                    /* Identifier can start with   */
                                               /* any valid ascii characters  */
                                               /* except the numbers          */
 //      int bill,bill;                      /* ascii characters from 0x00- */
@@ -28,7 +28,6 @@ public class Identifiers
 //      int [bill,`bill;                      /* also true for 0x5B-0x60     */
 //      int b[ill,b`ill;
 //      int {bill,bill;                      /* also true for 0x7B-0x7F     */
-        int €bill,àbill,žbill;
 
         //Following are not valid identifiers
 //      int 1NotAccepted;                     /* Identifiers cannot start with*/

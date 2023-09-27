@@ -6,6 +6,12 @@ public class SortAlgorithm
 {
 
 
+private static final int SORT_DATETIME = 0;
+private static final int SORT_INCIDENTNO = 1;
+private static final int SORT_CALLERNAME = 2;
+private static final int SORT_BRANCH = 3;
+private static final int SORT_STATUS = 4;
+
 public static Vector sort(Vector vec,int sortField)
   {
   Incident []destInc = new Incident[vec.size()];
