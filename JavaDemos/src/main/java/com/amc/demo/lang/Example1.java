@@ -1,6 +1,6 @@
 package com.amc.demo.lang;
 
-import com.amc.datatype.Complex;
+import com.amc.demo.datatype.Complex;
 
 class Example1 
 {

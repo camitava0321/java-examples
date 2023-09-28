@@ -97,14 +97,14 @@ public class RegexDemo implements Runnable{
 
 	
 	public static void main(String[] args) {
-		String []patterns = {"public"};
-		File file = new File("D:\\Programs\\Java\\JExplorer_bak");
+		String []patterns = {"Body"};
+		File file = new File("C:\\Users\\AMITAVA\\Downloads");
 		File []filenames = file.listFiles(
 			new FilenameFilter(){
 			
 				public boolean accept(File arg0, String arg1) {
 					// TODO Auto-generated method stub
-					return false;
+					return true;
 				}
 			
 			});

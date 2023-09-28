@@ -4,7 +4,7 @@
 /*****************************************************************************/
 package com.amc.demo.util;
 
-import com.amc.datatype.Binary;
+import com.amc.demo.datatype.Binary;
 
 public class BinUtils
 {

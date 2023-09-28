@@ -1,4 +1,4 @@
-package com.amc.datatype;
+package com.amc.demo.datatype;
 public class Complex extends Object
 {
 	private double u;  

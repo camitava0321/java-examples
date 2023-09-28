@@ -23,8 +23,8 @@ public class AMCEnum {
     	double earthWeight = 56.0; //My weight in Earth
         double mass = earthWeight/Planet.EARTH.surfaceGravity();
         for (Planet p : Planet.values())
-           System.out.printf("Your weight on %s is %f%n",
-                             p, p.surfaceWeight(mass));
+           System.out.printf("Your weight (%f) on %s is %f%n",
+        		   earthWeight,p, p.surfaceWeight(mass));
     }
 	
     public void DayOfWeekTest()

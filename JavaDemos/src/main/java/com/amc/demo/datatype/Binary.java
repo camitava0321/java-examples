@@ -10,7 +10,7 @@
  *  @version  1.0.0
  */
 
-package com.amc.datatype;
+package com.amc.demo.datatype;
 
 public class Binary {
 

@@ -4,6 +4,7 @@
 package com.amc.demo.lang.enums;
 
 /**
+ * Complex Enum - Holder of Multiple Related Constant Values
  * @author Amitava Chakraborty(ibm) - IT Architect IBM India
  * Aug 24, 2014 
  */
@@ -20,20 +21,21 @@ public enum Planet {
 
     private final double mass;   // in kilograms
     private final double radius; // in meters
+    // universal gravitational constant  (m3 kg-1 s-2)
+    private static final double G = 6.67300E-11;
+
     Planet(double mass, double radius) {
         this.mass = mass;
         this.radius = radius;
     }
-    private double mass() { return mass; }
-    private double radius() { return radius; }
+    public double mass() { return mass; }
+    public double radius() { return radius; }
 
-    // universal gravitational constant  (m3 kg-1 s-2)
-    public static final double G = 6.67300E-11;
-
-    double surfaceGravity() {
+    public double surfaceGravity() {
         return G * mass / (radius * radius);
     }
-    double surfaceWeight(double otherMass) {
+    public double surfaceWeight(double otherMass) {
         return otherMass * surfaceGravity();
     }
+    
 }
