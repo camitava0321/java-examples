@@ -3,81 +3,30 @@
  */
 package com.amc.junit.base;
 
+import java.util.Objects;
+
 /**
  * @author Amitava Chakraborty
  *
  */
-public class Account {
-	
-	private int accountId;
-	private String accountName;
-	private double balance;
-	private String accountType;
-	private double interestRate;
-	/**
-	 * @return the interestRate
-	 */
-	public double getInterestRate() {
-		return interestRate;
+public record Account (
+		int accountId,
+		String accountName,
+		double balance,
+		String accountType,
+		double interestRate
+
+) {
+	public static double DEFAULT_BALANCE=0.0;
+	public static double DEFAULT_INTEREST_RATE=AccountManager.BASIC_INTEREST_RATE;
+	public Account {
+		Objects.requireNonNull(accountId,"Account Id cannot be null");
+		Objects.requireNonNull(accountName,"Account Name cannot be null");
+		Objects.requireNonNull(accountType,"Account Type cannot be null");
 	}
-	/**
-	 * @param interestRate the interestRate to set
-	 */
-	public void setInterestRate(double interestRate) {
-		this.interestRate = interestRate;
-	}
-	/**
-	 * @return the accountId
-	 */
-	public int getAccountId() {
-		return accountId;
-	}
-	/**
-	 * @param accountId the accountId to set
-	 */
-	public void setAccountId(int accountId) {
-		this.accountId = accountId;
-	}
-	/**
-	 * @return the accountName
-	 */
-	public String getAccountName() {
-		return accountName;
-	}
-	/**
-	 * @param accountName the accountName to set
-	 */
-	public void setAccountName(String accountName) {
-		this.accountName = accountName;
-	}
-	/**
-	 * @return the balance
-	 */
-	public double getBalance() {
-		return balance;
-	}
-	/**
-	 * @param balance the balance to set
-	 */
-	public void setBalance(double balance) {
-		this.balance = balance;
-	}
-	/**
-	 * @return the accountType
-	 */
-	public String getAccountType() {
-		return accountType;
-	}
-	/**
-	 * @param accountType the accountType to set
-	 */
-	public void setAccountType(String accountType) {
-		this.accountType = accountType;
-	}
-	
-	public String toString()
-	{
-		String string = getAccountName()+":"+getBalance()+":"+getInterestRate();
-	return string;
+
+	//Custom Constructor
+	public Account (int accountId, String accountName, String accountType) {
+		this(accountId,accountName,DEFAULT_BALANCE,accountType,DEFAULT_INTEREST_RATE);
 	}
 }

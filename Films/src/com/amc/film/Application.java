@@ -14,16 +14,16 @@ import org.json.JSONObject;
  * @author ibm
  *
  */
-public class Film {
+public class Application {
 
-	public Film() {
+	public Application() {
 		// TODO Auto-generated constructor stub
 	}
 	
 	public static void main(String[] args) {
-		Film film = new Film();
+		Application film = new Application();
 		
-		OMDBDemos.exampleA();
+		OMDBDemos.getAllMovies("Batman",0);
 		OMDBDemos.exampleB();
 		
 		//For - http://www.omdbapi.com/?t=Game of Thrones&Season=1&Episode=1
@@ -33,8 +33,9 @@ public class Film {
 		//For - http://www.omdbapi.com/?i=tt0944947&Season=1
 		OMDBDemos.genericQuery("i=tt0944947&Season=1");
 		//For - http://www.omdbapi.com/?t=*for*&y=1980&plot=full&r=json
-		OMDBDemos.genericQuery("t=*for*&y=1980&plot=full&r=xml");
-		//OMDBDemos.getMultipleFilms();
+		//This will fail, we still cannot process XML
+		//OMDBDemos.genericQuery("t=*for*&y=1980&plot=full&r=xml");
+		OMDBDemos.getMultipleFilms();
 		
 		//Get multiple films with a word
 		OMDBDemos.genericQuery("s=throne");

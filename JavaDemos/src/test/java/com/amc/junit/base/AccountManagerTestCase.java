@@ -41,12 +41,7 @@ public class AccountManagerTestCase {
 	@Before
 	public void setUp() throws Exception {
 		//SetUp several Test Accounts
-		account = new Account();
-		account.setAccountId(1000);
-		account.setAccountName("Account name1");
-		account.setAccountType("SAVINGS");
-		account.setBalance(900);
-		
+		account = new Account(1000, "Account name1",900,"SAVINGS",0);
 		accountManager = new AccountManager();
 	}
 
@@ -70,8 +65,8 @@ public class AccountManagerTestCase {
 		accountManager.setInterestRate(account);
 		
 		//delta is 0.0
-		assertEquals(expectedTestResult, account.getInterestRate(), 0.0);
-		assertTrue(expectedTestResult< account.getInterestRate());
+		assertEquals(expectedTestResult, account.interestRate(), 0.0);
+		assertTrue(expectedTestResult< account.interestRate());
 		System.out.println(account);
 	}
 	
@@ -87,11 +82,11 @@ public class AccountManagerTestCase {
 	
 	private static Account setupAccountObject(int seed)
 	{
-		Account account = new Account();
-		account.setAccountId(1000+seed);
-		account.setAccountName("Account name"+seed);
-		account.setAccountType(((seed%2)!=0)?"SAVINGS":"CURRENT");
-		account.setBalance(900+10000*(seed*Math.random()));
+		Account account = null;
+		account = new Account(1000+seed, "Account name"+seed,
+				900+10000*(seed*Math.random()),
+				((seed%2)!=0)?"SAVINGS":"CURRENT",
+				0);
 		return(account);
 	}
 }

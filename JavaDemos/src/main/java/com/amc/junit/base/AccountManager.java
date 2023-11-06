@@ -15,33 +15,47 @@ public class AccountManager {
 	public static final double MAX_INTEREST_RATE=BASIC_CURRENT_INTEREST_RATE*(1.2);
 	
 	
-	public void setInterestRate(Account account)
+	public Account setInterestRate(Account account)
 	{
-		if (account.getAccountType().equals("SAVINGS")) {
-			setInterestRateForSavings(account);
+		Account newAccount = null;
+		if (account.accountType().equals("SAVINGS")) {
+			newAccount = setInterestRateForSavings(account);
 		}
-		if (account.getAccountType().equals("CURRENT")) {
-			setInterestRateForCurrent(account);
+		if (account.accountType().equals("CURRENT")) {
+			newAccount = setInterestRateForCurrent(account);
 		}
+	return(newAccount);
 	}
 	
-	public void setInterestRateForSavings(Account account)
+	public Account setInterestRateForSavings(Account account)
 	{
-		if (account.getBalance()<1000) {
-			account.setInterestRate(MIN_INTEREST_RATE);
+		Account newAccount = null;
+		if (account.balance()<1000) {
+			newAccount = new Account(account.accountId(),account.accountName(),account.balance(), account.accountType(),
+					MIN_INTEREST_RATE);
 		}
-		if (account.getBalance()>1000) {
-			account.setInterestRate(BASIC_INTEREST_RATE);
+		if (account.balance()>1000) {
+			newAccount = new Account(account.accountId(),account.accountName(),account.balance(), account.accountType(),
+					BASIC_INTEREST_RATE);
 		}
+		return(newAccount);
 	}
 	
-	public void setInterestRateForCurrent(Account account)
+	public Account setInterestRateForCurrent(Account account)
 	{
-		if (account.getBalance()<10000) {
-			account.setInterestRate(BASIC_CURRENT_INTEREST_RATE);
+		Account newAccount = null;
+		if (account.balance()<10000) {
+			newAccount = new Account(account.accountId(),account.accountName(),account.balance(), account.accountType(),
+					BASIC_CURRENT_INTEREST_RATE);
 		}
-		if (account.getBalance()>10000) {
-			account.setInterestRate(MAX_INTEREST_RATE);
+		if (account.balance()>10000) {
+			newAccount = new Account(account.accountId(),account.accountName(),account.balance(), account.accountType(),
+					MAX_INTEREST_RATE);
 		}
+		return(newAccount);
+	}
+
+	public Account cloneAccount(Account account) {
+		return new Account(account.accountId(),account.accountName(),account.balance(), account.accountType(), account.interestRate());
 	}
 }

@@ -31,11 +31,18 @@ public class OMDBDemos {
 	
 	
 	
-	public static void exampleA()
+	/**
+	 * Search All Films with a searchstring and page number
+	 */
+	public static void getAllMovies(String searchString, int pageNumber)
 	{
 		JSONObject jsonObject=null;
 		try {
-			String URL=Configuration.buildURI("s=Batman&page=2");
+			String URI="s="+searchString;
+			if (pageNumber>0) {
+				URI=URI+"&page="+pageNumber;
+			}
+			String URL=Configuration.buildURI(URI);
 			jsonObject=JsonReader.readJsonFromUrl(URL);
 			//JSONObject jsonObject=JsonReader.readJsonFromUrl("http://www.omdbapi.com/?t=berlin+jerusalem&y=&plot=short&r=json");
 			
@@ -43,7 +50,12 @@ public class OMDBDemos {
 			JSONArray results=null;
 			if (Integer.parseInt(jsonObject.optString("totalResults"))>0) {
 				results = jsonObject.getJSONArray("Search");
-				System.out.println(results);
+				//Print Raw JSON object
+				System.out.println("Total Entries: "+results.length());
+				System.out.println("Raw JSON: for search string="+
+						searchString+" and Page="+
+						pageNumber+"\n"+results+"\n");
+				//Print Info for each entry
 				for (int i = 0; i < results.length(); i++) {
 					jsonObject = results.getJSONObject(i);
 					for (Iterator iterator = jsonObject.keys(); iterator.hasNext();) {
@@ -52,12 +64,6 @@ public class OMDBDemos {
 					} 
 					System.out.println();
 				}
-				String filmName="";
-				String year=jsonObject.optString("Response/Search/0/Year");
-				String duration=jsonObject.optString("Runtime");
-				String director=jsonObject.optString("Director");
-				String country=jsonObject.optString("Country");
-				System.out.println(filmName+","+year+","+duration+","+director+","+country.replace(',', ' '));
 			}
 		} catch (JSONException | IOException e) {
 			System.out.println(jsonObject);

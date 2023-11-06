@@ -9,27 +9,50 @@
  */
 package com.amc.junit.tdd;
 
-import junit.framework.TestCase;
+import com.amc.junit.base.IBankServices;
+import com.amc.junit.base.Account;
+import com.amc.junit.util.TestUtilities;
+import org.junit.jupiter.api.*;
 
-import org.junit.Before;
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.fail;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 /**
  * @author Amitava Chakraborty
  *
  */
-public class MoneyTransferComponentTestCase extends TestCase{
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
+public class MoneyTransferComponentTestCase {
+
+	private IBankServices bankServices;
+	private Account fromAccount;
+	private Account toAccount;
 
 	
-	@Before
-	public void setUp()
+	@BeforeAll
+	public void setUp(TestReporter testReporter)
 	{
-		
+		bankServices = mock(IBankServices.class);
+		fromAccount = TestUtilities.getRandomAccount();
+		toAccount = TestUtilities.getRandomAccount();
+		boolean fReturn = bankServices.transferAmount(
+				fromAccount, toAccount, 500.00);
+		testReporter.publishEntry("Mock Returns: "+fReturn);
+		System.out.println("Mock Returns: "+fReturn);
+
+		when(bankServices.transferAmount(
+				fromAccount, toAccount, 500.00))
+				.thenReturn(true);
 	}
 	
 	@Test
 	public void testMoneyTransfer()
 	{
+		assertEquals(true,
+				bankServices.transferAmount(
+						fromAccount, toAccount, 500.00));
 	}
 	
 	
